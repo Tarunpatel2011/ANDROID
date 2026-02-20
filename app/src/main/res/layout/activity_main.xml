@@ -14,7 +14,7 @@
         android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register_Form"
+        android:text="@string/registerform"
         android:textSize="26sp"
         android:layout_gravity="center"
 
@@ -32,7 +32,7 @@
         android:id="@+id/txt_firstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First Name"
+        android:text="@string/first_name"
         android:textSize="20sp"
 
         />
@@ -40,10 +40,10 @@
         android:id="@+id/edt_firstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter First Name"
+        android:hint="@string/enter_first_name"
         android:textSize="26sp"
         android:layout_marginStart="10dp"
-        />
+        tools:ignore="Autofill,TextFields" />
 
 </LinearLayout>
 
@@ -60,7 +60,7 @@
             android:id="@+id/txt_lastname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Name"
+            android:text="@string/last_name"
             android:textSize="20sp"
 
             />
@@ -68,10 +68,10 @@
             android:id="@+id/edt_lastname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Enter Last Name"
+            android:hint="@string/enter_last_name"
             android:textSize="26sp"
             android:layout_marginStart="10dp"
-            />
+            tools:ignore="Autofill,TextFields" />
 
     </LinearLayout>
 
@@ -87,7 +87,7 @@
             android:id="@+id/txt_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phone Number:"
+            android:text="@string/phonenumber"
             android:textSize="20sp"
             />
 
@@ -95,11 +95,11 @@
             android:id="@+id/edt_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:hint="@string/phone_number"
             android:textSize="26sp"
             android:layout_marginStart="1dp"
             android:inputType="phone"
-            />
+            tools:ignore="Autofill" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/layout_radio"
@@ -112,13 +112,14 @@
             android:id="@+id/rg_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
             <RadioButton
                 android:id="@+id/rb_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Male"
-                android:textSize="20dp"
+                android:text="@string/male"
+                android:textSize="20sp"
                 android:checked="false"
                 android:layout_gravity="center_horizontal"
                 />
@@ -126,8 +127,8 @@
                 android:id="@+id/rb_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female"
-                android:textSize="20dp"
+                android:text="@string/female"
+                android:textSize="20sp"
                 android:checked="false"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="10dp"
@@ -135,6 +136,18 @@
 
 
         </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
     </LinearLayout>
 
     <LinearLayout
@@ -146,7 +159,7 @@
             android:id="@+id/btn_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/register"
             android:textSize="20sp"
             />
 
@@ -160,11 +173,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already Register? Login"
+            android:text="@string/already_register_login"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
             android:textColor="@color/design_default_color_on_secondary"
             />
+
+
 
     </LinearLayout>
 </LinearLayout>

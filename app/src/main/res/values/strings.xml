@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My ApplicationT</string>
+    <string name="register">📜Register</string>
+    <string name="already_register_login">Already Register? Login</string>
+    <string name="female">👩Female</string>
+    <string name="male">👨Male</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="first_name">First Name</string>
+    <string name="registerform">✍RegisterForm📃</string>
+    <string name="phonenumber">Phone Number:</string>
 </resources>
